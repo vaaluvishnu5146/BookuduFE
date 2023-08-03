@@ -1,0 +1,7 @@
+.app-layout-container {
+  width: 100%;
+  height: 100vh;
+  > .app-layout-body {
+    height: calc(100% - 56px);
+  }
+}

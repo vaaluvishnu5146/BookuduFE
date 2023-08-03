@@ -10,14 +10,18 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import "./style.css";
+import AuthenticationContextProvider from "./Context/Authentication.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ThemeProvider theme={MuiTheme}>
     <CssBaseline />
-    <Router>
-      <App />
-    </Router>
+    <AuthenticationContextProvider>
+      <Router>
+        <App />
+      </Router>
+    </AuthenticationContextProvider>
   </ThemeProvider>
 );
 

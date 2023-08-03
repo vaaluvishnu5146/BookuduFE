@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PageLayout from "../layout";
-import BasicCard from "../Components/Card/BasicCard";
-import Text from "../Elements/Texts/Text";
+import BasicCard from "../../../SharedComponents/Card/BasicCard";
+import Text from "../../../SharedComponents/Texts/Text";
 import TextInput from "../Elements/TextInput/TextInput";
 import RadioButtonsGroup from "../Elements/RadioGroup/BasicRadio";
 import BasicCta from "../Elements/Buttons/BasicCta";

@@ -1,9 +1,7 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 
-export default function BasicCard({ children }) {
+export default function BasicCard({ children, overrides = {} }) {
   return (
     <Card
       sx={{
@@ -12,6 +10,7 @@ export default function BasicCard({ children }) {
         boxSizing: "border-box",
         display: "flex",
         flexDirection: "column",
+        ...overrides,
       }}
       variant="outlined"
     >
